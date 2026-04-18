@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 210 40% 98%;
+  --surface-2: 210 35% 96%;
+  --ink: 222 47% 11%;
+  --ink-muted: 215 16% 42%;
+  --accent: 187 65% 40%;
+  --accent-fg: 210 40% 98%;
+  --care: 142 55% 42%;
+  --care-soft: 142 45% 94%;
+  --warn: 38 92% 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-surface text-ink antialiased;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
